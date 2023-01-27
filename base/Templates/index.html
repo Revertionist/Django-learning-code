@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Hello World{% endblock %}
+
+{% block content %}
+
+{% include "NavBar/navbar.html" %}
+
+<div class="container-fluid">
+    <h1>Hello World</h1>
+    <br>
+    <a href="/">
+        <h3>Home</h3>
+        <br>
+    </a>
+    <a href="room/">
+        <h3>Room</h3>
+    </a>
+    <br>
+    <a href="admin/">
+        <h3>Admin Page</h3>
+    </a>
+    {% for room in rooms %}
+    <div>
+
+        <h5>{{room.id}} -- {{room.name}}</h5>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
