@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 rooms = [
     {'id': 1, 'name': 'this is a trial'},
